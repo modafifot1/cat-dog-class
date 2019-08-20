@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>hi</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./statics/style.css">
+</head>
+
+<body>
+    <h3 class="lich-hoc">Lich Hoc</h3>
+    <table class="table-subject">
+        <tr id='day'>
+
+        </tr>
+        <tr id='morning' class="tieu-de">
+            <td></td>
+            <td></td>
+            <td>3-4,F208</td>
+            <td></td>
+            <td>3-4,F401</td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr id='afternoon'>
+            <td>6-7,XP/8-10,F303</td>
+            <td>7-8,F303/9-10,F303</td>
+            <td>7-10,C206(t6-8)</td>
+            <td>7-8,F303/9-10,F303</td>
+            <td>9-10,F303</td>
+            <td></td>
+            <td></td>
+
+        </tr>
+    </table>
+    <script>
+        var day_html = document.getElementById('day');
+
+        function render() {
+            var day = [2, 3, 4, 5, 6, 7, 'chủ nhật'];
+            var content = day.map(function(item) {
+                if (typeof(item) === 'number') {
+                    return '<th> thứ ' + item + '</th>';
+                } else {
+                    return '<th>' + item + '</th>';
+                }
+            })
+            day_html.innerHTML = content.join('');
+        }
+        render();
+    </script>
+</body>
+
+</html>

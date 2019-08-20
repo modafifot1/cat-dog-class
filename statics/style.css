@@ -1,0 +1,23 @@
+th,
+td,
+tr {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 15px;
+}
+
+.tieu-de {
+    color: blue;
+}
+
+.table-subject {
+    width: 100%
+}
+
+.lich-hoc {
+    text-align: center;
+    color: blueviolet;
+}
